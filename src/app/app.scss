@@ -14,3 +14,44 @@
 // To declare rules for a specific mode, create a child rule
 // for the .md, .ios, or .wp mode classes. The mode class is
 // automatically applied to the <body> element in the app.
+
+.content{
+    background-color: #3d8af7;
+}
+
+.butao{
+    background-color: #164c9c;
+    margin: auto;
+    margin-top:20%; 
+}
+
+.titulo{
+    margin: auto;
+    font-size: x-large;
+    padding-top: 10px;
+    color: #044096db;
+    padding-bottom: 10%;
+    text-align: center;
+}
+
+.input-velocidade{
+    background-color: white;
+    width: 70px !important;
+    height: auto;
+    float: right;
+    border: 1px solid #5e5e5e;
+    text-align: center;
+}
+
+.label-velocidade{
+    float: left;
+    font-family: cursive;
+
+}
+
+.select{
+    float: right;
+    margin: auto;
+    margin-top: 10px;
+}
+

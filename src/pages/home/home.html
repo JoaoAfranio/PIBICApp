@@ -1,14 +1,16 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      PIBIC App
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content padding class="content"> 
+  <div class="row posicionaButao">  
+    <button (click)="transferePaginaCurvaS()" ion-button class="butao">Curva Simples</button>
+  </div>
+  <div class="row">
+    <button (click)="transferePaginaCurvaT()" ion-button class="butao">Curva de Transição</button>
+  </div>
 </ion-content>

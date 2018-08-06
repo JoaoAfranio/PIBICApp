@@ -1,3 +1,4 @@
+import { CurvaSimplesPage } from './../pages/curva-simples/curva-simples';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -6,11 +7,27 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ParamProjetoCsPage } from '../pages/param-projeto-cs/param-projeto-cs';
+import { CurvaSimplesDadosPage } from '../pages/curva-simples-dados/curva-simples-dados';
+import { CurvaSimplesDadosFinaisPage } from '../pages/curva-simples-dados-finais/curva-simples-dados-finais';
+import { CurvaTransicaoPage } from '../pages/curva-transicao/curva-transicao';
+import { ParamProjetoCtPage } from '../pages/param-projeto-ct/param-projeto-ct';
+import { CurvaTransicaoDadosPage } from '../pages/curva-transicao-dados/curva-transicao-dados';
+import { CurvaTransicaoDadosFinaisPage } from '../pages/curva-transicao-dados-finais/curva-transicao-dados-finais';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    CurvaSimplesPage,
+    ParamProjetoCsPage,
+    CurvaSimplesDadosPage,
+    CurvaSimplesDadosFinaisPage,
+    CurvaTransicaoPage,
+    ParamProjetoCtPage,
+    CurvaTransicaoDadosPage,
+    CurvaTransicaoDadosFinaisPage
+
   ],
   imports: [
     BrowserModule,
@@ -19,7 +36,15 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    CurvaSimplesPage,
+    ParamProjetoCsPage,
+    CurvaSimplesDadosPage,
+    CurvaSimplesDadosFinaisPage,
+    CurvaTransicaoPage,
+    ParamProjetoCtPage,
+    CurvaTransicaoDadosPage,
+    CurvaTransicaoDadosFinaisPage
   ],
   providers: [
     StatusBar,

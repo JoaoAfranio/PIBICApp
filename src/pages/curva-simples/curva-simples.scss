@@ -1,0 +1,34 @@
+page-curva-simples {
+    .titulo{
+        margin: auto;
+        font-size: x-large;
+        padding-top: 10px;
+        color: #044096db;
+        padding-bottom: 10%;
+        text-align: center;
+    }
+
+    .input-velocidade{
+        background-color: white;
+        width: 70px !important;
+        height: auto;
+        float: right;
+        border: 1px solid #5e5e5e;
+        text-align: center;
+    }
+
+    .label-velocidade{
+        float: left;
+        font-family: cursive;
+
+    }
+
+    .select{
+        float: right;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+
+
+}
