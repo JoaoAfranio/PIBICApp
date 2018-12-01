@@ -22,47 +22,57 @@
   
     <div class="row">
       <ion-label class="label-velocidade">Velocidade diretriz conhecida</ion-label>
-      <input type="text" class="input-velocidade">
+      <input [(ngModel)]="INPUTvelDiretriz" type="text" class="input-velocidade">
     </div>
   
     <div class="row">
       <ion-label class="label-velocidade">Tipo de relevo</ion-label><br>
-        <select class="select">
-          <option>Teste</option>
+        <select [(ngModel)]="tipoRelevo" class="select">
+          <option>Plano</option>
+          <option>Ondulado</option>
+          <option>Montanhoso</option>
         </select>
     </div>
   
     <div class="row">
       <ion-label class="label-velocidade">Classe de projeto</ion-label>
-        <select class="select">
-          <option>Teste</option>
+        <select [(ngModel)]="classeProj" class="select">
+          <option>0</option>
+          <option>1</option>
+          <option>2</option>
+          <option>3</option>
+          <option>4</option>
         </select>
     </div>
   
     <div class="row">
       <ion-label class="label-velocidade">Área urbanizada</ion-label>
-        <select class="select">
-          <option>Teste</option>
+        <select [(ngModel)]="areaUrbanizada" class="select">
+          <option>Sim</option>
+          <option>Não</option>
         </select>
     </div>
   
     <div class="row">
       <ion-label class="label-velocidade">Intensa ocupação do solo</ion-label>
-        <select class="select">
-          <option>Teste</option>
+        <select [(ngModel)]="ocupacaoSolo" class="select">
+          <option>Sim</option>
+          <option>Não</option>
         </select>
     </div>
   
     <div class="row">
       <ion-label class="label-velocidade">Tipo de pista</ion-label>
-        <select class="select">
-          <option>Teste</option>
+        <select [(ngModel)]="tipoPista" class="select">
+          <option>Simples</option>
+          <option>Dupla</option>
+          <option>Simples e Dupla</option>
         </select>
     </div>
 
     <div class="row">
         <ion-label class="label-velocidade">Raio</ion-label>
-        <input type="text" class="input-velocidade">
+        <input [(ngModel)]="INPUTraio" type="text" class="input-velocidade">
       </div>
   
     <div class="row">   
@@ -71,22 +81,24 @@
   
     <div class="row">
       <ion-label class="label-velocidade">Qualidade</ion-label>
-        <select class="select">
-          <option>Teste</option>
+        <select [(ngModel)]="visibilidadeQualidade" class="select">
+          <option>Recomendada</option>
+          <option>Excepcional</option>
         </select>
     </div>
   
     <div class="row">
       <ion-label class="label-velocidade">Tipo de inclinação</ion-label>
-        <select class="select">
-          <option>Teste</option>
+        <select [(ngModel)]="tipoInclinacao" class="select">
+          <option>Ascendente</option>,
+          <option>Descendente</option>
         </select>
     </div>    
   
   
     <div class="row">
       <ion-label class="label-velocidade">Inclinição (%)</ion-label>
-      <input type="text" class="input-velocidade">
+      <input [(ngModel)]="inclinacao" type="text" class="input-velocidade">
     </div>
     
     <div class="row">

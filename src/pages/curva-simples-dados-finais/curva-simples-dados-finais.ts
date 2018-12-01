@@ -18,36 +18,71 @@ export class CurvaSimplesDadosFinaisPage {
 
   lista=[];
   lista2=[];
+
+  anguloDeflexao: any;
+  PIEstaca: any;
+  Estaqueamento: any;
+  raio: any;
+
+  PI: any;
+  D: any;
+  AC: any;
+  T: any;
+  E: any;
+  C: any;
+  G: any;
+  defTang: any;
+  defMetro: any;
+  PC: any;
+  PT: any;
+
+  estacaInicial: any;
+  estacaIntersecao: any;
+  estacaFinal: any;
   
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.anguloDeflexao = navParams.get('anguloDeflexao');
+    this.PIEstaca = navParams.get('PIEstaca');
+    this.Estaqueamento = navParams.get('Estaqueamento');
+    this.raio = navParams.get('raio');
+
+    this.PI = navParams.get('PI');
+    this.D = navParams.get('D');
+    this.AC = navParams.get('AC');
+    this.T = navParams.get('T');
+    this.E = navParams.get('E');
+    this.C = navParams.get('C');
+    this.G = navParams.get('G');
+    this.defTang = navParams.get('defTang');
+    this.defMetro = navParams.get('defMetro');
+    this.PC = navParams.get('PC');
+    this.PT = navParams.get('PT');
+
+    this.estacaInicial = navParams.get('estacaInicial');
+    this.estacaIntersecao = navParams.get('estacaIntersecao');
+    this.estacaFinal = navParams.get('estacaFinal');
+
+
     this.lista=[
-      {param:"RC = Raio da curva circular (m)",perc:80.2},
-      {param:"TS = Ponto inicial do trecho de transição (m)",perc:30.2},
-      {param:"SC = Espiral circular (m)",perc:18.2},
-      {param:"CS = Circular espiral",perc:80.2},
-      {param:"ST = Espiral tangente",perc:30.2},
-      {param:"PI = Ponto de interseção das tangentes (m)",perc:18.2},
-      {param:"Xs = Abscissa dos pontos SC e CS (m)",perc:80.2},
-      {param:"Ys = Ordenada dos pontos SC e CS (m)",perc:30.2},
-      {param:"TT = Tangente total (m)",perc:18.2},
-      {param:"K = Abscissa do centro O'",perc:18.2},
-      {param:"P = Afastamento da curva circular (m)",perc:18.2},
-      {param:"θs = Ângulo de transição (rad)",perc:18.2},
-      {param:"Φ = Ângulo central do trecho circular (rad)",perc:18.2},
-      {param:"AC = Ângulo central (°)",perc:18.2},
-      {param:"Δ = Deflexão das tangentes (°)",perc:18.2},
-      {param:"D = Desenvolvimento do trecho circular (m)",perc:18.2},
-      {param:"Ls = Comprimento do Trecho de Transição (m)",perc:18.2},
-      {param:"E = Comprimento do Trecho de Transição (m)",perc:18.2}
+      {param:"PC = Ponto Inicial (m)",perc:this.PC.toFixed(2)},
+      {param:"PT = Ponto Final (m)",perc:this.PT.toFixed(2)},
+      {param:"PI = Ponto de Interseção das Tangentes (m)",perc:this.PI},
+      {param:"D = Desenvolvimento (m)",perc:this.D.toFixed(2)},
+      {param:"AC = Ângulo Central (º)",perc:this.AC},
+      {param:"R = Raio (m)",perc:this.raio},
+      {param:"T = Tangente Externa (m)",perc:this.T.toFixed(2)},
+      {param:"E = Afastamento (m)",perc:this.E.toFixed(2)},
+      {param:"C = Corda (m)",perc:this.C},
+      {param:"G = Grau da Curva p/ corda escolhida",perc:this.G.toFixed(2)},
+      {param:"Deflexão sobre a tangente (º)",perc:this.defTang.toFixed(2)},
+      {param:"Deflexão / metro (º)",perc:this.defMetro.toFixed(2)},
       
     ];
 
     this.lista2=[
-      {param:"PI (estaca de interseção)",perc:80.2},
-      {param:"TS (estaca inicial)",perc:80.2},
-      {param:"SC (espiral circular)",perc:80.2},
-      {param:"CS (circular espiral)",perc:80.2},
-      {param:"ST (estaca final)",perc:80.2},
+      {param:"Eestaca inicial",perc:this.estacaInicial},
+      {param:"Estaca de interseção",perc:this.estacaIntersecao},
+      {param:"Estaca final",perc:this.estacaFinal},
     ];
   }
 
